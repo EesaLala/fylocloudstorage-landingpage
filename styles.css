@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+
+nav {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 15px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.hero img {
+    max-width: 700px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 8px 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    border: 2px solid hsl(198, 60%, 50%);
+    outline: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.key-points {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.point h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.productive {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.productive h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.productive-link {
+    color: hsl(176, 68%, 64%);
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    width: fit-content;
+    margin-top: 15px;
+}
+
+.productive a img{
+    margin-left: 5px;
+}
+
+.testimonials {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin-bottom: 250px;
+    padding: 20px;
+}
+
+.review {
+    padding: 30px 15px;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.profile-text {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.testimonials div img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.job {
+    font-weight: 400;
+}
+
+.get-access {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color:  hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    transform: translateY(calc(-100% - 20px));
+    margin-top: 100px;
+}
+
+.get-access p {
+    text-align: center;
+    max-width: 700px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.get-access input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    padding-right: 90px;
+}
+
+.get-access button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 15px;
+    outline: 0;
+    background: linear-gradient(90deg,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    border: 2px solid hsl(198, 60%, 50%);
+    color: white;
+    font-weight: 700;
+}
+
+.get-email {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+}
+
+footer img {
+    margin-left: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
+.socials {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .key-points {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        padding: 25px;
+    }
+
+    .nav-logo {
+        max-width: 100px;
+    }
+
+    .hero img {
+        max-width: 300px;
+    }
+
+    .productive {
+        flex-direction: column;
+    }
+
+    .productive img {
+        max-width: 350px;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .get-access {
+        padding: 30px;
+    }
+
+    .get-access input, .get-access button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .get-access button {
+        margin-top: 15px;
+    }
+
+    footer img {
+        margin: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content * {
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        margin-left: 0;
+    }
+
+    .socials {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  }
+
+
